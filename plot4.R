@@ -7,7 +7,7 @@ plot(as.numeric(as.character(datos[,5]))~datos$Datetime, ylab="Voltage", xlab=""
 plot(as.numeric(as.character(datos[,7]))~datos$Datetime, ylab="Enery sub metering", xlab="", type="l")
 lines(as.numeric(as.character(datos[,8]))~datos$Datetime, ylab="Enery sub metering", xlab="", type="l", col="red")
 lines(as.numeric(as.character(datos[,9]))~datos$Datetime, ylab="Enery sub metering", xlab="", type="l", col="blue")
-legend("topright", lty=c(1,1),lwd=c(2.5,2.5),col=c("black", "red", "blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), pt.cex = 1, cex=0.7)
+legend("topright", lty=c(1,1),lwd=c(2.5,2.5),col=c("black", "red", "blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), pt.cex = 1, cex=0.6,bty = "n")
 plot(as.numeric(as.character(datos[,4]))~datos$Datetime, ylab="Global_reactive_power", xlab="", type="l")
 dev.copy(png, "plot4.png", height=480, width=480)
 dev.off()
